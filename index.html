@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Multi Alarm Timer</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="top">
+    <h1>⏱️ นาฬิกาปลุก/จับเวลา (10 รายการ)</h1>
+
+    <div class="actions">
+      <button id="pauseAll">Pause ทั้งหมด</button>
+      <button id="resetAll">Reset ทั้งหมด</button>
+      <button id="add">+ เพิ่มรายการ</button>
+      <button id="remove">- ลบรายการ</button>
+    </div>
+
+    <p class="hint">
+      ตั้งชื่อ/ตั้งนาทีได้ • กด Start/Pause/Reset รายการละได้ • ครบเวลาจะมีเสียง + แจ้งเตือน
+    </p>
+  </header>
+
+  <main id="grid" class="grid"></main>
+
+  <div id="toast" class="toast hidden"></div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
